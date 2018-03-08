@@ -17,9 +17,9 @@ namespace Firehose.Web.Authors
 
         public string EmailAddress => "martinzikmund@sphereline.com";
 
-        public string ShortBioOrTagLine => "is a mobile + cloud solutions developer, Microsoftie, foodie and Insanity & P90X fan";
+        public string ShortBioOrTagLine => "is a mobile + cloud solutions developer, Microsoftie, Geocacher, regular squash player, foodie and Insanity & P90X fan";
 
-        public Uri WebSite => new Uri("http://mzikmund.com/", UriKind.Absolute);
+        public Uri WebSite => new Uri("https://blog.mzikmund.com/", UriKind.Absolute);
 
         public string TwitterHandle => "MZetko";
 
@@ -29,9 +29,11 @@ namespace Firehose.Web.Authors
 
         public GeoPosition Position => new GeoPosition(50.124017, 14.451934);
 
+        public string FeedLanguageCode => "en";
+
         public IEnumerable<Uri> FeedUris
         {
-            get { yield return new Uri("http://blog.mzikmund.com/feed/?lang=en_us"); }
+            get { yield return new Uri("https://blog.mzikmund.com/feed/?lang=en_us"); }
         }
         
         public bool Filter(SyndicationItem item)
